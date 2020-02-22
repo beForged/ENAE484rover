@@ -1,0 +1,234 @@
+1
+ MACHINE                        MODEL                 OPERATING SYSTEM       NX Nastran         BUILD DATE         RUN DATE
+ Intel64 Family 6 Mod           Intel(R) Core(TM) i7  Windows 10             VERSION   12.0     SEP 21, 2017       FEB 22, 2020
+
+ 
+                               ===      N X  N a s t r a n            E X E C U T I O N   S U M M A R Y    ===
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    Subroutine
+ 
+ 13:06:40     0:00        0.0         0.0         0.0        0.0    SEMTRN   BGN
+ 13:06:40     0:00        0.0         0.0         0.0        0.0    SEMTRN   END
+ 13:06:40     0:00        0.0         0.0         0.0        0.0    DBINIT   BGN
+      ** CURRENT PROJECT ID = ' "BLANK" '  ** CURRENT VERSION ID =          1
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   P R I M A R Y   D A T A B A S E     ( DBSNO   1, NXN12.0 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    ...del_modes-solution_1.T29756_34.MASTER     MASTER           MASTER       NEW          32769           1          200222130640
+    ...odel_modes-solution_1.T29756_34.DBALL     DBALL            DBALL        NEW          32769           1          200222130641
+    ...del_modes-solution_1.T29756_34.OBJSCR     OBJSCR           OBJSCR       NEW           8193           1          200222130642
+               **** MEM FILE ****                * N/A *          SCRATCH 
+    ...el_modes-solution_1.T29756_34.SCRATCH     SCRATCH          SCRATCH      NEW          32769           1          200222130643
+    ...del_modes-solution_1.T29756_34.SCR300     SCR300           SCRATCH      NEW          32769           1          200222130644
+ 13:06:40     0:00        7.0         7.0         0.0        0.0    DBINIT   END
+ 13:06:40     0:00        7.0         0.0         0.0        0.0    XCSA     BGN
+
+     S U M M A R Y   O F   F I L E   A S S I G N M E N T   F O R   T H E   D E L I V E R Y   D A T A B A S E   ( DBSNO   2, NXN12.0 )
+
+    ASSIGNED PHYSICAL FILE NAME (/ORIGINAL)      LOGICAL NAME     DBSET        STATUS    BUFFSIZE     CLUSTER SIZE      TIME STAMP
+    ---------------------------------------      ------------     -----        ------    --------     ------------     ------------
+    c:/.../nxn12/em64tntl/SSS.MASTERA            MASTERA          MASTER       OLD           8193           1          170921082401
+   /./sss.MASTERA                           
+    c:/program files/.../em64tntl/SSS.MSCOBJ     MSCOBJ           MSCOBJ       OLD           8193           1          170921082406
+   /./sss.MSCOBJ                            
+    c:/program files/.../em64tntl/SSS.MSCSOU     MSCSOU           MSCSOU       OLD           8193           1          170921082407
+   /./sss.MSCSOU                            
+ 13:06:40     0:00      394.0       387.0         0.1        0.1    XCSA     END
+ 13:06:40     0:00      394.0         0.0         0.1        0.0    CGPI     BGN
+ 13:06:40     0:00      394.0         0.0         0.1        0.0    CGPI     END
+ 13:06:40     0:00      394.0         0.0         0.1        0.0    LINKER   BGN
+ 13:06:40     0:00      605.0       211.0         0.2        0.0    LINKER   END
+
+                    S U M M A R Y   O F   P H Y S I C A L   F I L E   I N F O R M A T I O N
+
+    ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  MODE  FLAGS  WSIZE  (WNUM)
+    ------------------------------------------------------------  ------------  ----  -----  -------------
+    ...hicle_lowfidelitymodel_modes-solution_1.T29756_34.SCRATCH        262144   R/W           N/A        
+    ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.OBJSCR         65536   R/W           N/A        
+    ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.MASTER        262144   R/W           N/A        
+    ...vehicle_lowfidelitymodel_modes-solution_1.T29756_34.DBALL        262144   R/W           N/A        
+    ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.SCR300        262144   R/W           N/A        
+    c:/program files/siemens/.../nxn12/em64tntl/SSS.MASTERA              65536   R/O           N/A        
+    c:/program files/siemens/.../nxn12/em64tntl/SSS.MSCOBJ               65536   R/O           N/A        
+
+    FLAG VALUES ARE --
+      B   BUFFERED I/O USED TO PROCESS FILE
+      M   FILE MAPPING USED TO PROCESS FILE
+      R   FILE BEING ACCESSED IN 'RAW' MODE
+ 
+    ASSIGNED PHYSICAL FILE NAME                                   LOGICAL   UNIT  STATUS   ACCESS   RECL  FORM    FLAGS
+    ------------------------------------------------------------  --------  ----  -------  ------  -----  ------  -----
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.f04          LOGFL        4  OLD      SEQ      N/A   FMTD         
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.f06          PRINT        6  OLD      SEQ      N/A   FMTD         
+    c:/program files/siemens/.../nxnastran/nxn12/nast/news.txt    INCLD1       9  OLD      SEQ      N/A   FMTD      R  
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.plt          PLOT        14  OLD      SEQ      N/A   UNFMTD       
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.op2          OP2         12  OLD      SEQ      N/A   UNFMTD       
+    ...l_vehicle_lowfidelitymodel_modes-solution_1.T29756_34.f18  OUTPUT2     18  UNKNOWN  SEQ      N/A   UNFMTD       
+    ...l_vehicle_lowfidelitymodel_modes-solution_1.T29756_34.f19  INPUTT4     19  OLD      SEQ      N/A   UNFMTD    R  
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.f56          F56         56  UNKNOWN  SEQ      N/A   FMTD         
+    ...l_vehicle_lowfidelitymodel_modes-solution_1.T29756_34.sf1  SF1         93  OLD      SEQ      N/A   UNFMTD   T   
+    ...l_vehicle_lowfidelitymodel_modes-solution_1.T29756_34.sf2  SF2         94  OLD      SEQ      N/A   UNFMTD   TR  
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.s200tmp      S200       112  UNKNOWN  SEQ      N/A   UNFMTD   T   
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.pch          PUNCH        7  OLD      SEQ      N/A   FMTD         
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.xdb          DBC         40  UNKNOWN  DIRECT   1024  UNFMTD       
+    ./full_vehicle_lowfidelitymodel_modes-solution_1.asm          ASSEM       16  OLD      SEQ      N/A   FMTD         
+
+    FLAG VALUES ARE --
+      A   FILE HAS BEEN DEFINED BY AN 'ASSIGN' STATEMENT
+      D   FILE IS TO BE DELETED BEFORE RUN, IF IT EXISTS
+      R   FILE IS READ-ONLY
+      T   FILE IS TEMPORARY AND WILL BE DELETED AT END OF RUN
+
+    ** PHYSICAL FILES LARGER THAN 2GB ARE SUPPORTED ON THIS PLATFORM
+ 
+0    ** MASTER DIRECTORIES ARE LOADED IN MEMORY.
+        USER OPENCORE (HICORE)         =   576049735  WORDS
+        EXECUTIVE SYSTEM WORK AREA     =      316925  WORDS
+        MASTER(RAM)                    =       89330  WORDS
+        SCRATCH(MEM) AREA              =   192157416  WORDS (    5864 BUFFERS)
+        BUFFER POOL AREA (GINO/EXEC)   =   192150498  WORDS (    5862 BUFFERS)
+        TOTAL OPEN CORE MEMORY         =   960763904  WORDS
+        TOTAL DYNAMIC MEMORY           =           0  WORDS
+
+        TOTAL NX NASTRAN MEMORY LIMIT  =   960763904  WORDS
+
+
+ Day_Time  Elapsed     I/O_Mb      Del_Mb     CPU_Sec    Del_CPU    SubDMAP Line (S)SubDMAP/Module
+ 
+ 13:06:40     0:00      607.0         2.0         0.2        0.0    XSEMDR   BGN
+ 13:06:40     0:00      608.0         1.0         0.2        0.0    SEMODES 54   (S)IFPL    BEGN    
+ 13:06:40     0:00      609.0         1.0         0.2        0.0    IFPL    44      IFP1    BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPL    180     XSORT   BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPL    207     COPY    BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPL    229     FORTIO  BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPL    263  (S)IFPS    BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    30      IFP     BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFP     
+ *       COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY          COUNT:ENTRY     *
+ *         350:CBEAM             15:CONM1            610:CQUAD4             1:EIGRL           1022:GRID               1:MAT1      *
+ *           1:MATT1              6:PARAM              3:PBEAM              1:PSHELL            13:RBE2               3:TABLEM1   *
+ *    PARAM:  K6ROT     OIBULK    OMACHPR   POST      POSTEXT   UNITSYS                                                           *
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    35   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    37   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    39   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    62   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    64   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    66   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    68   (S)TESTBIT BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    75      CHKPNL  BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    76      DMIIN   BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    87      DTIIN   BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    189     MODGM2  BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    200     PVT     BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    241     GP1LM   BEGN    
+ 13:06:40     0:00      609.0         0.0         0.2        0.0    IFPS    242     GP1     BEGN    
+ 13:06:40     0:00      616.0         7.0         0.2        0.0    IFPS    366     GP7     BEGN    
+ 13:06:40     0:00      616.0         0.0         0.2        0.0    IFPL    268     SEPR1   BEGN    
+ 13:06:40     0:00      616.0         0.0         0.2        0.0    IFPL    269     DBDELETEBEGN    
+ 13:06:40     0:00      616.0         0.0         0.2        0.0    IFPL    284     PROJVER BEGN    
+ 13:06:40     0:00      617.0         1.0         0.2        0.0    IFPL    289     PVT     BEGN    
+ 13:06:40     0:00      618.0         1.0         0.2        0.0    IFPL    343  (S)IFPS1   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   15      DTIIN   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   47      PLTSET  BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   50      MSGHAN  BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   51      MSGHAN  BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   52      GP0     BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPS1   58      MSGHAN  BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPL    345  (S)TESTBIT BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    IFPL    395  (S)TESTBIT BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    SEMODES 69   (S)PHASE0  BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  174  (S)ATVIN   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  199     PVT     BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  200     COPY    BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  206     PROJVER BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  209     DTIIN   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  253     OUTPUT2 BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  264     OUTPUT2 BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  270     OUTPUT2 BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  293  (S)TESTBIT BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  294  (S)TESTBIT BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  295  (S)TESTBIT BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  445     SEP1X   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  464     GP1LM   BEGN    
+ 13:06:40     0:00      618.0         0.0         0.2        0.0    PHASE0  472     GP1     BEGN    
+ 13:06:40     0:00      619.0         1.0         0.2        0.0    PHASE0  478     GP2     BEGN    
+ 13:06:40     0:00      619.0         0.0         0.2        0.0    PHASE0  598     TA1     BEGN    
+ 13:06:40     0:00      619.0         0.0         0.2        0.0    PHASE0  603     TASNP2  BEGN    
+ 13:06:40     0:00      619.0         0.0         0.2        0.0    PHASE0  608     SEP1    BEGN    
+ 13:06:40     0:00      620.0         1.0         0.2        0.0    PHASE0  676     TABPRT  BEGN    
+ 13:06:40     0:00      620.0         0.0         0.2        0.0    PHASE0  677     SEP3    BEGN    
+ 13:06:40     0:00      620.0         0.0         0.2        0.0    PHASE0  889     PVT     BEGN    
+ 13:06:40     0:00      620.0         0.0         0.2        0.0    PHASE0  996     PVT     BEGN    
+ 13:06:40     0:00      620.0         0.0         0.2        0.0    PHASE0  998     PVT     BEGN    
+ 13:06:40     0:00      630.0        10.0         0.2        0.0    PHASE0  1696 (S)SETQ    BEGN    
+ 13:06:40     0:00      630.0         0.0         0.2        0.0    PHASE0  1867    GP2     BEGN    
+ 13:06:40     0:00      631.0         1.0         0.2        0.0    PHASE0  1899    GPJAC   BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  1987    GP3     BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  1990    LCGEN   BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  1999    VECPLOT BEGN    
+ *8** Module  DMAP Matrix         Cols       Rows  F T     NzWds     Density  BlockT  StrL    NbrStr    BndAvg    BndMax    NulCol
+      VECPLOT 1999 SCR 301        6132          6  2 1         3 3.16156E-01       3     1       9229          2          6         0 *8**
+      VECPLOT 1999 DRG            6132          6  2 1         3 3.16200E-01       3     1       9229          2          6         0 *8**
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  2034    BCDR    BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  2035    CASE    BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  2036    PVT     BEGN    
+ 13:06:40     0:00      631.0         0.0         0.2        0.0    PHASE0  2124    GP4     BEGN    
+ 13:06:40     0:00      631.0         0.0         0.3        0.0    PHASE0  2323    BCDR    BEGN    
+ 13:06:40     0:00      631.0         0.0         0.3        0.0    PHASE0  2554 (S)PRTSUM  BEGN    
+ 13:06:40     0:00      631.0         0.0         0.3        0.0    PHASE0  2555    EXIT    BEGN    
+
+
+ *** PARALLEL PROCESSES CPU INFORMATION (SECONDS) ***
+
+  MODULE     PROCESS-1     PROCESS-2     PROCESS-3     PROCESS-4     PROCESS-5     PROCESS-6     PROCESS-7     PROCESS-8
+  --------   -----------   -----------   -----------   -----------   -----------   -----------   -----------   -----------
+  ========   ===========   ===========   ===========   ===========   ===========   ===========   ===========   ===========
+  
+ *** SYSTEM WARNING MESSAGE 6299 (PARCPU)
+     NO PARALLEL PROCESS CREATED
+
+ *** TOTAL MEMORY AND DISK USAGE STATISTICS ***
+
+ +---------- SPARSE SOLUTION MODULES -----------+         +------------- MAXIMUM DISK USAGE -------------+
+      HIWATER               SUB_DMAP        DMAP               HIWATER               SUB_DMAP        DMAP
+      (WORDS)   DAY_TIME      NAME         MODULE                 (MB)   DAY_TIME      NAME         MODULE
+            0   13:06:40    PREFACE     0  PREFACE              39.438   13:06:40    PHASE0   2555  EXIT    
+
+
+ *** DATABASE USAGE STATISTICS ***
+ 
+ +------------------ LOGICAL DBSETS ------------------+   +------------------------- DBSET FILES -------------------------+
+  DBSET      ALLOCATED   BLOCKSIZE        USED    USED     FILE       ALLOCATED     HIWATER       HIWATER  I/O TRANSFERRED
+              (BLOCKS)     (WORDS)    (BLOCKS)       %                 (BLOCKS)    (BLOCKS)          (MB)             (GB)
+ 
+  MASTER          5000       32768          57    1.14     MASTER          5000          57        14.250            0.385
+  DBALL        2000000       32768           4    0.00     DBALL        2000000           4         1.000            0.002
+  OBJSCR          5000        8192         379    7.58     OBJSCR          5000         379        23.688            0.030
+  SCRATCH      4005864       32768          43    0.00    (MEMFILE         5864          46        11.500            0.000)
+                                                           SCRATCH      2000000           1         0.250            0.000
+                                                           SCR300       2000000           1         0.250            0.000
+                                                                                                            ==============
+                                                                                                     TOTAL:          0.417
+ 
+ *** BUFFER POOL AND SCRATCH 300 USAGE STATISTICS ***
+ 
+ +----------------- BUFFER POOL -----------------+      +-------------------------- SCRATCH 300 --------------------------+ 
+   OPTION        BLOCKS      BLOCKS      BLOCKS           OPTION    HIWATER               SUB_DMAP        DMAP     OPN/CLS
+  SELECTED     ALLOCATED     REUSED     RELEASED         SELECTED  (BLOCKS)   DAY_TIME      NAME         MODULE    COUNTER
+  GINO,EXEC        5862        4768           0              2           1    13:06:40    PREFACE     0  PREFACE       0
+
+
+ *** SUMMARY OF PHYSICAL FILE I/O ACTIVITY ***
+
+ ASSIGNED PHYSICAL FILE NAME                                   RECL (BYTES)  READ/WRITE COUNTS   WSIZE  (WNUM)  MAP-I/O CNT
+ ------------------------------------------------------------  -----------  -------------------  -------------  -----------
+ ...hicle_lowfidelitymodel_modes-solution_1.T29756_34.SCRATCH       262144          0/1            N/A            N/A          
+ ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.OBJSCR        65536          0/486          N/A            N/A          
+ ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.MASTER       262144          3/1575         N/A            N/A          
+ ...vehicle_lowfidelitymodel_modes-solution_1.T29756_34.DBALL       262144          2/9            N/A            N/A          
+ ...ehicle_lowfidelitymodel_modes-solution_1.T29756_34.SCR300       262144          0/1            N/A            N/A          
+ c:/program files/siemens/.../nxn12/em64tntl/SSS.MASTERA             65536         78/0            N/A            N/A          
+ c:/program files/siemens/.../nxn12/em64tntl/SSS.MSCOBJ              65536        374/0            N/A            N/A          
+ 
