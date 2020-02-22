@@ -11,7 +11,7 @@ $*        SOLUTION TYPE: SOL 103 Real Eigenvalues
 $*
 $*    SOLVER INPUT FILE: full_vehicle_lowfidelitymodel_modes-solution_1.dat
 $*        CREATION DATE: 22-Feb-2020
-$*        CREATION TIME: 13:06:33
+$*        CREATION TIME: 13:40:51
 $*             HOSTNAME: DESKTOP-A3VQUJM
 $*      NASTRAN LICENSE: Desktop Bundle
 $*
@@ -2122,14 +2122,6 @@ GRID*               4577               08.2500000000E+021.7914285714E+03+
 *       4.6000000000E+02               0
 GRID*               4578               02.6052631579E+021.7914285714E+03+
 *       4.6000000000E+02               0
-GRID*               4583               01.6499999974E+031.8857142857E+02+
-*       2.2999999091E+02               0
-GRID*               4584               01.6499999974E+031.7914285714E+03+
-*       2.2999999091E+02               0
-GRID*               4585               00.0000000000E+001.7914285714E+03+
-*       2.3000000000E+02               0
-GRID*               4586               00.0000000000E+001.8857142857E+02+
-*       2.3000000000E+02               0
 $*
 $* ELEMENT CARDS
 $*
@@ -4960,7 +4952,7 @@ RBE2        1395    4538  123456    2027    2031    4531    4509    4504+
 +           4526
 $*  Mesh Collector: Battery Mass
 $*  Mesh: 0d_mesh(1)
-CONM1       1396    4538       0 96.0000
+CONM2       1442    4538       0 96.0000
 $*  Mesh Collector: Suspension Beams
 $*  Mesh: connection_mesh(2)
 CBEAM       1397       4    4551      670.496139-0.86824  0.0000
@@ -4987,12 +4979,12 @@ CBEAM       1411       4    4549      190.4961390.868243  0.0000
 CBEAM       1412       4    4549     2860.1717170.8682430.465475
 $*  Mesh Collector: Wheel Masses
 $*  Mesh: 0d_mesh(2)
-CONM1       1413    4548       0
+CONM2       1443    4548       0 20.0000
 $*  Mesh Collector: Wheel Masses
 $*  Mesh: 0d_mesh(3)
-CONM1       1414    4549       0 10.0000
-CONM1       1415    4550       0 10.0000
-CONM1       1416    4551       0 10.0000
+CONM2       1444    4549       0 20.0000
+CONM2       1445    4550       0 20.0000
+CONM2       1446    4551       0 20.0000
 $*  Mesh Collector: Mast Connector
 $*  Mesh: connection_mesh(5)
 RBE2        1417    4554  123456    1025    1021     945     949
@@ -5008,8 +5000,8 @@ CBEAM       1420       5    4553    4554  0.00001.000000  0.0000
 CBEAM       1421       5    4553    4552  0.0000-1.00000  0.0000
 CBEAM       1422       5    4552    4555  0.0000-1.00000  0.0000
 $*  Mesh Collector: Mast Top Mass
-$*  Mesh: 0d_manual_mesh(1)
-CONM1       1423    4555       03.000000
+$*  Mesh: 0d_manual_mesh(7)
+CONM2       1447    4555       03.000000
 $*  Mesh Collector: Seat Connectors
 $*  Mesh: connection_mesh(8)
 RBE2        1424    4574  123456     266    1978    1999    2003    2007+
@@ -5019,16 +5011,11 @@ $*  Mesh: connection_mesh(9)
 RBE2        1425    4575  123456     267    2059    1995    2055    2051+
 +           2047    2043
 $*  Mesh Collector: Astronaut + Chair
-$*  Mesh: 0d_manual_mesh(2)
-CONM1       1426    4574       0185.0000
+$*  Mesh: 0d_manual_mesh(8)
+CONM2       1448    4574       0185.0000
 $*  Mesh Collector: Astronaut + Chair
-$*  Mesh: 0d_manual_mesh(3)
-CONM1       1427    4575       0185.0000
-$*  Mesh Collector: Storage Connector
-$*  Mesh: connection_mesh(10)
-RBE2        1428    4578  123456     286      42      43     246      44+
-+           3663    3667    3671    3675    3679    3683    4534    4535+
-+           4536    2847    2843    2839    2835    2831    2827
+$*  Mesh: 0d_manual_mesh(9)
+CONM2       1449    4575       0185.0000
 $*  Mesh Collector: Storage Connector
 $*  Mesh: connection_mesh(11)
 RBE2        1429    4577  123456    3683    4534    4535    4536    2847+
@@ -5036,37 +5023,22 @@ RBE2        1429    4577  123456    3683    4534    4535    4536    2847+
 +           4513    4512    3711    3707    3703    3699    3695    3691+
 +           3687
 $*  Mesh Collector: Storage Connector
-$*  Mesh: connection_mesh(12)
-RBE2        1430    4576  123456    3711    4512    4513    4514    2875+
-+           2879    2883    2887    2891    2895     247      88      87+
-+             86     287    3731    3727    3723    3719    3715
+$*  Mesh: connection_mesh(17)
+RBE2        1453    4578  123456    2827    2831    2835    2839    2843+
++           3679    3675    3671    3667    3663
+$*  Mesh Collector: Storage Connector
+$*  Mesh: connection_mesh(18)
+RBE2        1454    4576  123456    2879    2883    2887    2891    2895+
++           3731    3727    3723    3719    3715
 $*  Mesh Collector: Storage Mass
-$*  Mesh: 0d_manual_mesh(4)
-CONM1       1431    4578       0110.0000
+$*  Mesh: 0d_manual_mesh(10)
+CONM2       1450    4578       0110.0000
 $*  Mesh Collector: Storage Mass
-$*  Mesh: 0d_manual_mesh(5)
-CONM1       1432    4577       0110.0000
+$*  Mesh: 0d_manual_mesh(11)
+CONM2       1451    4577       0110.0000
 $*  Mesh Collector: Storage Mass
-$*  Mesh: 0d_manual_mesh(6)
-CONM1       1433    4576       0110.0000
-$*  Mesh Collector: Motor Connecter
-$*  Mesh: connection_mesh(13)
-RBE2        1434    4586  123456       1      23     226       6
-$*  Mesh Collector: Motor Connecter
-$*  Mesh: connection_mesh(14)
-RBE2        1435    4585  123456     286     246       2      19
-$*  Mesh Collector: Motor Connecter
-$*  Mesh: connection_mesh(15)
-RBE2        1436    4584  123456     287     247    3660    4496
-$*  Mesh Collector: Motor Connecter
-$*  Mesh: connection_mesh(16)
-RBE2        1437    4583  123456      67     227    1974    1138
-$*  Mesh Collector: Motor Masses
-$*  Mesh: 0d_mesh(4)
-CONM1       1438    4583       0 10.0000
-CONM1       1439    4584       0 10.0000
-CONM1       1440    4585       0 10.0000
-CONM1       1441    4586       0 10.0000
+$*  Mesh: 0d_manual_mesh(12)
+CONM2       1452    4576       0110.0000
 $*
 $* PROPERTY CARDS
 $*
@@ -5120,4 +5092,4 @@ TABLEM1        3                       1                                +
 +       190.56002.4300-5204.44002.4444-5218.33002.4588-5232.22002.4732-5+
 +       246.11002.4876-5260.00002.5002-5273.89002.5146-5287.78002.5272-5+
 +       301.67002.5398-5315.56002.5524-5    ENDT
-ENDDATA ae322ff2
+ENDDATA fe5e78d8

@@ -18,8 +18,8 @@ symbol=DELDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/del' $(prog
 symbol=DEMODIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/demo' $(program default)
 symbol=SSSALTERDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/misc/sssalter' $(program default)
 symbol=TPLDIR='c:/program files/siemens/nx 12.0/nxnastran/nxn12/nast/tpl' $(program default)
-SDIR='c:/users/brian/appdata/local/temp/full_vehicle_lowfidelitymodel_modes-solution_1.T29756_34'
-DBS='c:/users/brian/appdata/local/temp/full_vehicle_lowfidelitymodel_modes-solution_1.T29756_34'
+SDIR='c:/users/brian/appdata/local/temp/full_vehicle_lowfidelitymodel_modes-solution_1.T33120_51'
+DBS='c:/users/brian/appdata/local/temp/full_vehicle_lowfidelitymodel_modes-solution_1.T33120_51'
 SCR=yes
 SMEM=20.0X
 NEWDEL='c:/program files/siemens/nx 12.0/nxnastran/nxn12/em64tntl/SSS'
@@ -43,9 +43,9 @@ FPE:         no
 -------------------------------------------------------------------
 Current resource limits:
  Physical memory:                    16289 MB
- Physical memory available:           8444 MB
+ Physical memory available:           8133 MB
  Paging file size:                   18721 MB
- Paging file size available:         10323 MB
+ Paging file size available:          9929 MB
  Virtual memory:                 134217727 MB
  Virtual memory available:       134213572 MB
 -------------------------------------------------------------------
@@ -66,38 +66,44 @@ System configuration:
  Disk block size:  512 bytes (64 words)
  Remote shell cmd: "c:/program files/siemens/nx 12.0/nxnastran/nxn12/em64tntl/edsrmtcmd.exe" (Windows, UNIX)
 -------------------------------------------------------------------
-NX Nastran started  Sat Feb 22 13:06:34 EST 2020
- 13:06:34  Beginning Analysis
+NX Nastran started  Sat Feb 22 13:40:51 EST 2020
+ 13:40:52  Beginning Analysis
 
- 13:06:34  NX NASTRAN Authorization Information - System Attributes
- 13:06:34  --------------------------------------------------------
- 13:06:34  Model: Intel(R) Core(TM) i7-6560U CPU @
- 13:06:34  Machine: Intel64 Family 6 Model 78 Steppi
- 13:06:34  OS: Windows 10
- 13:06:34  Version:
- 13:06:34  License File(s): 28000@plm.eng.umd.edu
-
-
- 13:06:38  NX NASTRAN Licensing Information
- 13:06:38  -------------------------------
- 13:06:38  Sold To ID:            1333569 - UNIVERSITY OF MARYLAN
- 13:06:38  Webkey Access Code:    Y39QANOK64
- 13:06:38  License File Issuer:   SIEMENS
+ 13:40:52  NX NASTRAN Authorization Information - System Attributes
+ 13:40:52  --------------------------------------------------------
+ 13:40:52  Model: Intel(R) Core(TM) i7-6560U CPU @
+ 13:40:52  Machine: Intel64 Family 6 Model 78 Steppi
+ 13:40:52  OS: Windows 10
+ 13:40:52  Version:
+ 13:40:52  License File(s): 28000@plm.eng.umd.edu
 
 
- 13:06:38  NX NASTRAN Authorization Information - Checkout Successful
- 13:06:38  ----------------------------------------------------------
- 13:06:38  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
+ 13:40:55  NX NASTRAN Licensing Information
+ 13:40:55  -------------------------------
+ 13:40:55  Sold To ID:            1333569 - UNIVERSITY OF MARYLAN
+ 13:40:55  Webkey Access Code:    Y39QANOK64
+ 13:40:55  License File Issuer:   SIEMENS
+
+
+ 13:40:55  NX NASTRAN Authorization Information - Checkout Successful
+ 13:40:55  ----------------------------------------------------------
+ 13:40:55  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
 
 Loading Shared Library C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe\mayamoncomm.dll
 Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe'
 Starting monitor viewer at C:\Program Files\Siemens\NX 12.0\nxcae_extras\tmg\exe/xcsmon_viewer.exe
- 13:06:40  Analysis started.
- 13:06:40  Geometry access/verification to CAD part initiated (if needed).
- 13:06:40  Geometry access/verification to CAD part successfully completed (if needed).
- 13:06:44  NSEXIT: EXIT(0)
- 13:06:44  Analysis complete  0
-Real:        9.914 seconds ( 0:00:09.914)
-User:        4.312 seconds ( 0:00:04.312)
-Sys:         0.343 seconds ( 0:00:00.343)
-NX Nastran finished Sat Feb 22 13:06:44 EST 2020
+ 13:40:57  Analysis started.
+ 13:40:57  Geometry access/verification to CAD part initiated (if needed).
+ 13:40:57  Geometry access/verification to CAD part successfully completed (if needed).
+ 13:40:57  Finite element model generation started.
+ 13:40:58  Finite element model generated 6108 degrees of freedom.
+ 13:40:58  Finite element model generation successfully completed.
+ 13:40:58  Application of Loads and Boundary Conditions to the finite element model started.
+ 13:40:58  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 13:40:58  Normal modes analysis completed.
+ 13:41:02  NSEXIT: EXIT(0)
+ 13:41:02  Analysis complete  0
+Real:       10.427 seconds ( 0:00:10.427)
+User:        4.437 seconds ( 0:00:04.437)
+Sys:         0.375 seconds ( 0:00:00.375)
+NX Nastran finished Sat Feb 22 13:41:02 EST 2020
