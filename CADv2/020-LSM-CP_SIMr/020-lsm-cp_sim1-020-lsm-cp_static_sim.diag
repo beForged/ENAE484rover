@@ -1,0 +1,69 @@
+
+*** 22:55:47 *** 
+Starting Nastran Exporter
+
+*** 22:55:47 *** 
+Writing file 
+\\Client\C$\Users\Braden\Desktop\ENAE484\ENAE484rover\CADv2\020-LSM-CP_SIMr\020-lsm-cp_sim1-020-lsm-cp_static_sim.dat
+ 
+*** 22:55:47 *** 
+Writing NX NASTRAN 12.2 compatible deck
+
+*** 22:55:47 *** 
+Writing Nastran System section
+
+*** 22:55:48 *** 
+Writing File Management section
+
+*** 22:55:48 *** 
+Writing Executive Control section
+
+*** 22:55:48 *** 
+Writing Case Control section
+
+*** 22:55:48 *** 
+Writing Bulk Data section
+
+*** 22:55:48 *** 
+Writing Nodes
+
+*** 22:56:28 *** 
+Writing Elements
+
+*** 22:56:50 *** 
+Writing Physical Properties
+
+*** 22:56:50 *** 
+Writing Materials
+
+*** 22:56:50 *** 
+Writing Degree-of-Freedom Sets
+
+*** 22:56:50 *** 
+Writing Loads and Constraints
+
+*** 22:56:50 *** 
+Writing Coordinate Systems
+
+*** 22:56:50 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 22921    |
+| FORCE    | 1        |
+| GRID     | 38757    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 7        |
+| PSOLID   | 1        |
+| RBE3     | 3        |
+| SPC      | 2        |
+| SPCADD   | 1        |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 22:56:51 *** 
+Nastran Deck Successfully Written
+

@@ -1,0 +1,76 @@
+
+*** 04:05:20 *** 
+Starting Nastran Exporter
+
+*** 04:05:21 *** 
+Writing file 
+\\Client\C$\Users\Braden\Desktop\ENAE484\ENAE484rover\CADv2\022-LSM-CP_SIM\022-lsm-cp_sim1-kingpin_stress_analysis.dat
+ 
+*** 04:05:21 *** 
+Writing NX NASTRAN 12.2 compatible deck
+
+*** 04:05:21 *** 
+Writing Nastran System section
+
+*** 04:05:21 *** 
+Writing File Management section
+
+*** 04:05:21 *** 
+Writing Executive Control section
+
+*** 04:05:21 *** 
+Writing Case Control section
+
+*** 04:05:21 *** 
+WARNING : Parameter AUTOMPC may not be recognized by the solver when specified 
+          in the case control section
+ 
+*** 04:05:22 *** 
+Writing Bulk Data section
+
+*** 04:05:22 *** 
+Writing Nodes
+
+*** 04:05:59 *** 
+Writing Elements
+
+*** 04:06:29 *** 
+Writing Physical Properties
+
+*** 04:06:29 *** 
+Writing Materials
+
+*** 04:06:29 *** 
+Writing Degree-of-Freedom Sets
+
+*** 04:06:29 *** 
+Writing Loads and Constraints
+
+*** 04:06:29 *** 
+Writing Coordinate Systems
+
+*** 04:06:30 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 19618    |
+| FORCE    | 1        |
+| GRID     | 32410    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| RBE3     | 3        |
+| SPC      | 2        |
+| SPCADD   | 1        |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 04:06:31 *** 
+1 warning issued
+
+*** 04:06:31 *** 
+Nastran Deck Successfully Written
+
