@@ -3,15 +3,15 @@ $*
 $*                    Simcenter v12.0.0.27 Translator
 $*                    for NX Nastran version 12.0
 $*
-$*             FEM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Full_Vehicle_LowFidelityModel.fem
+$*             FEM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Simulations\Full_Vehicle_LowFidelityModel.fem
 $*             SIM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Simulations\Full_Vehicle_LowFidelityModel_Modes.sim
 $*        ANALYSIS TYPE: Structural
 $*        SOLUTION NAME: Solution 1
 $*        SOLUTION TYPE: SOL 103 Real Eigenvalues
 $*
 $*    SOLVER INPUT FILE: full_vehicle_lowfidelitymodel_modes-solution_1.dat
-$*        CREATION DATE: 22-Feb-2020
-$*        CREATION TIME: 18:32:58
+$*        CREATION DATE: 23-Feb-2020
+$*        CREATION TIME: 22:12:37
 $*             HOSTNAME: DESKTOP-A3VQUJM
 $*      NASTRAN LICENSE: Desktop Bundle
 $*
@@ -5011,6 +5011,18 @@ CONM2       1451    4577       0110.0000
 $*  Mesh Collector: Storage Mass
 $*  Mesh: 0d_manual_mesh(12)
 CONM2       1452    4576       0110.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(13)
+CONM2       1455    4551       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(14)
+CONM2       1456    4550       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(15)
+CONM2       1457    4549       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(16)
+CONM2       1458    4548       0 20.0000
 $*
 $* PROPERTY CARDS
 $*
@@ -5064,4 +5076,4 @@ TABLEM1        3                       1                                +
 +       190.56002.4300-5204.44002.4444-5218.33002.4588-5232.22002.4732-5+
 +       246.11002.4876-5260.00002.5002-5273.89002.5146-5287.78002.5272-5+
 +       301.67002.5398-5315.56002.5524-5    ENDT
-ENDDATA b82159cf
+ENDDATA ee8bf583

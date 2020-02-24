@@ -88,7 +88,7 @@
  for global, or multi-user control, and in a local file for local control.
  Individual jobs can be controlled by setting news to yes or no on the command
  line.
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     1
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     1
                                                                                                                                     
 0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
 0                                                                                                                                   
@@ -111,8 +111,8 @@
      $*        SOLUTION TYPE: SOL 103 REAL EIGENVALUES                               
      $*                                                                              
      $*    SOLVER INPUT FILE: FULL_VEHICLE_LOWFIDELITYMODEL_MODES-SOLUTION_1.DAT     
-     $*        CREATION DATE: 22-FEB-2020                                            
-     $*        CREATION TIME: 18:32:58                                               
+     $*        CREATION DATE: 23-FEB-2020                                            
+     $*        CREATION TIME: 22:12:37                                               
      $*             HOSTNAME: DESKTOP-A3VQUJM                                        
      $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
      $*                                                                              
@@ -143,7 +143,7 @@
      $*                                                                              
      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
      $*                                                                              
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     2
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     2
                                                                                                                                     
 0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
 0                                                                                                                                   
@@ -152,7 +152,7 @@
      ID,NASTRAN,FULL_VEHICLE_LOWFIDELITYMODEL_MODES-SOLUTION_1                               
      SOL 103                                                                                 
      CEND                                                                                    
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     3
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     3
                                                                                                                                     
 0                                                                                                                                   
 0                                        C A S E    C O N T R O L    E C H O                                                        
@@ -182,8 +182,8 @@
                  22      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
                  23      $*                                                                                      
                  24      BEGIN BULK                                                                              
-0                             INPUT BULK DATA ENTRY COUNT =        4996
-0                       TOTAL COUNT=      3047
+0                             INPUT BULK DATA ENTRY COUNT =        5008
+0                       TOTAL COUNT=      3051
 
 
                                         M O D E L   S U M M A R Y
@@ -192,7 +192,7 @@
  
  
                                    NUMBER OF CBEAM    ELEMENTS =      350
-                                   NUMBER OF CONM2    ELEMENTS =        7
+                                   NUMBER OF CONM2    ELEMENTS =       11
                                    NUMBER OF CQUAD4   ELEMENTS =      610
  
                                    NUMBER OF RBE2     ELEMENTS =        9
@@ -201,7 +201,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
      (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     4
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     4
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -212,8 +212,8 @@
                     101                 1                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
-     (NUMBER OF FORTRAN RECORDS WRITTEN =    24989 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =   119903 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =    25049 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   120191 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                26                 0                 0                 0                 0                 0
@@ -256,7 +256,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      594 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =      645 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     5
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     5
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -275,7 +275,7 @@
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     8543 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    14981 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    15033 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
                     103                 0                 0                 0                 0              2048                 0
@@ -311,7 +311,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       30 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       63 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     6
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     6
                                                                                                                                     
 0                                                                                                                                   
 0                                                                                                                                   
@@ -324,7 +324,7 @@
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2016 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =     4062 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     7
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
  *** USER INFORMATION MESSAGE 7310 (VECPRN)
@@ -346,17 +346,17 @@
      DECOMP ORDERING METHOD CHOSEN: DEFAULT, ORDERING METHOD USED: MMD
  *** USER INFORMATION MESSAGE 5010 (LNCILS)
      STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
-     TRIAL EIGENVALUE =  1.799382E+02, CYCLES =  2.134921E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =     8
+     TRIAL EIGENVALUE =  1.740232E+02, CYCLES =  2.099538E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =     8
  *** USER INFORMATION MESSAGE 5010 (LNCILS)
      STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
-     TRIAL EIGENVALUE =  7.269705E+02, CYCLES =  4.291198E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =    10
+     TRIAL EIGENVALUE =  3.264260E+02, CYCLES =  2.875494E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =    10
 
  TABLE OF SHIFTS:  (LNNRIGL)
  SHIFT #        SHIFT VALUE         FREQUENCY, CYCLES     # EIGENVALUES BELOW    # NEW EIGENVALUES FOUND
-     1.        1.7993815E+02          2.1349208E+00                 8                       14
-     2.        7.2697048E+02          4.2911977E+00                10                        0
+     1.        1.7402317E+02          2.0995376E+00                 8                       16
+     2.        3.2642600E+02          2.8754942E+00                10                        0
 
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     8
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     8
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
 0
@@ -374,24 +374,24 @@
 
                                      NUMBER OF SOLVES REQUIRED ............    7
 
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     9
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE     9
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
  
                                               R E A L   E I G E N V A L U E S
    MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
     NO.       ORDER                                                                       MASS              STIFFNESS
-        1         1       -3.879003E-08        1.969519E-04        3.134586E-05        1.000000E+00       -3.879003E-08
-        2         2       -1.448643E-08        1.203596E-04        1.915582E-05        1.000000E+00       -1.448643E-08
-        3         3       -9.338805E-09        9.663749E-05        1.538033E-05        1.000000E+00       -9.338805E-09
-        4         4       -1.199396E-10        1.095169E-05        1.743016E-06        1.000000E+00       -1.199396E-10
-        5         5        1.235037E-09        3.514309E-05        5.593197E-06        1.000000E+00        1.235037E-09
-        6         6        1.612946E-08        1.270018E-04        2.021297E-05        1.000000E+00        1.612946E-08
-        7         7        1.566146E+02        1.251458E+01        1.991757E+00        1.000000E+00        1.566146E+02
-        8         8        1.722528E+02        1.312451E+01        2.088831E+00        1.000000E+00        1.722528E+02
-        9         9        2.635583E+02        1.623448E+01        2.583798E+00        1.000000E+00        2.635583E+02
-       10        10        4.692204E+02        2.166150E+01        3.447534E+00        1.000000E+00        4.692204E+02
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE    10
+        1         1       -5.295396E-08        2.301173E-04        3.662430E-05        1.000000E+00       -5.295396E-08
+        2         2       -2.571568E-08        1.603611E-04        2.552226E-05        1.000000E+00       -2.571568E-08
+        3         3       -1.813387E-08        1.346621E-04        2.143214E-05        1.000000E+00       -1.813387E-08
+        4         4       -7.560374E-09        8.695041E-05        1.383859E-05        1.000000E+00       -7.560374E-09
+        5         5        6.919834E-10        2.630558E-05        4.186663E-06        1.000000E+00        6.919834E-10
+        6         6        7.966293E-09        8.925409E-05        1.420523E-05        1.000000E+00        7.966293E-09
+        7         7        1.293852E+02        1.137476E+01        1.810350E+00        1.000000E+00        1.293852E+02
+        8         8        1.720051E+02        1.311507E+01        2.087329E+00        1.000000E+00        1.720051E+02
+        9         9        2.029006E+02        1.424432E+01        2.267054E+00        1.000000E+00        2.029006E+02
+       10        10        2.411676E+02        1.552957E+01        2.471608E+00        1.000000E+00        2.411676E+02
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE    10
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
@@ -403,22 +403,22 @@
      (TOTAL DATA WRITTEN FOR DATA BLOCK =      246 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK BOPHIG   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 1             15104                22                20                 0                 1
+                    101                 1             15104                23                20                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     8064 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =      114 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =    82207 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK OES1     WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                63                 2                22                20                 0                 1
+                    101                63                 2                23                20                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    38850 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =      214 RECORDS.)
      (TOTAL DATA WRITTEN FOR DATA BLOCK =   495307 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE    11
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE    11
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE    12
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE    12
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
  *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
@@ -426,7 +426,7 @@
                                  (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
                                        (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
                                        (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
-1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE    13
+1                                                                          FEBRUARY  23, 2020  NX NASTRAN  9/21/17   PAGE    13
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
  * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     29
