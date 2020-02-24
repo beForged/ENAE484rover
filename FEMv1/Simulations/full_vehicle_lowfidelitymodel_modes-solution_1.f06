@@ -112,7 +112,7 @@
      $*                                                                              
      $*    SOLVER INPUT FILE: FULL_VEHICLE_LOWFIDELITYMODEL_MODES-SOLUTION_1.DAT     
      $*        CREATION DATE: 22-FEB-2020                                            
-     $*        CREATION TIME: 13:40:51                                               
+     $*        CREATION TIME: 18:32:58                                               
      $*             HOSTNAME: DESKTOP-A3VQUJM                                        
      $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
      $*                                                                              
@@ -182,17 +182,17 @@
                  22      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
                  23      $*                                                                                      
                  24      BEGIN BULK                                                                              
-0                             INPUT BULK DATA ENTRY COUNT =        5024
-0                       TOTAL COUNT=      3071
+0                             INPUT BULK DATA ENTRY COUNT =        4996
+0                       TOTAL COUNT=      3047
 
 
                                         M O D E L   S U M M A R Y
 
-                                   NUMBER OF GRID     POINTS   =     1018
+                                   NUMBER OF GRID     POINTS   =     1008
  
  
                                    NUMBER OF CBEAM    ELEMENTS =      350
-                                   NUMBER OF CONM2    ELEMENTS =       11
+                                   NUMBER OF CONM2    ELEMENTS =        7
                                    NUMBER OF CQUAD4   ELEMENTS =      610
  
                                    NUMBER OF RBE2     ELEMENTS =        9
@@ -212,8 +212,8 @@
                     101                 1                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
-     (NUMBER OF FORTRAN RECORDS WRITTEN =    25129 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =   120575 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =    24989 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   119903 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
                     102                26                 0                 0                 0                 0                 0
@@ -237,18 +237,18 @@
      (TOTAL DATA WRITTEN FOR DATA BLOCK =       54 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101              1018              1018                 0                 0                 0                 0
+                    101              1008              1008                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2036 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2016 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     3085 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     3055 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
-                    102              1018                 7                 0                 1                 0                 0
+                    102              1008                 7                 0                 1                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    10180 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    10080 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    10206 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    10106 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
                     101                 0               512                 0              1024                 0                 0
@@ -275,7 +275,7 @@
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
      (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     8543 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    15033 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    14981 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
                     103                 0                 0                 0                 0              2048                 0
@@ -287,16 +287,16 @@
      DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
                     104                 0                 0                 8                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    11201 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    11091 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    11234 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    11124 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
-                    105              1018                 0              6108                 1                 0              4578
+                    105              1008                 0              6048                 1                 0              4578
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    12216 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    12096 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    14282 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    14142 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK DIT      WRITTEN ON FORTRAN UNIT  12, TRL =
                     101             32768                 0                 0                 0                 0                 0
@@ -319,11 +319,11 @@
                                                                                                                                     
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101              1018                 0                 0                 0                 0                 0
+                    101              1008                 0                 0                 0                 0                 0
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2036 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     2016 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =     4102 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     4062 WORDS.)
 1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     7
                                                                                                                                     
 0                                                                                                                                   
@@ -341,20 +341,20 @@
                MZ       ----          ----          ----          ----          ----       0.000000E+00                             
              TOTALS  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00  0.000000E+00                             
  *** USER INFORMATION MESSAGE - SINGULARITIES FOUND USING EIGENVALUE METHOD
- ***      60 SINGULARITIES FOUND        60 SINGULARITIES ELIMINATED
+ ***       0 SINGULARITIES FOUND         0 SINGULARITIES ELIMINATED
  *** SYSTEM INFORMATION MESSAGE 6916 (DFMSYN)
      DECOMP ORDERING METHOD CHOSEN: DEFAULT, ORDERING METHOD USED: MMD
  *** USER INFORMATION MESSAGE 5010 (LNCILS)
      STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
-     TRIAL EIGENVALUE =  2.090676E+02, CYCLES =  2.301249E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =     6
+     TRIAL EIGENVALUE =  1.799382E+02, CYCLES =  2.134921E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =     8
  *** USER INFORMATION MESSAGE 5010 (LNCILS)
      STURM SEQUENCE DATA FOR EIGENVALUE EXTRACTION.
-     TRIAL EIGENVALUE =  3.517528E+03, CYCLES =  9.439282E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =    10
+     TRIAL EIGENVALUE =  7.269705E+02, CYCLES =  4.291198E+00 NUMBER OF EIGENVALUES BELOW THIS VALUE =    10
 
  TABLE OF SHIFTS:  (LNNRIGL)
  SHIFT #        SHIFT VALUE         FREQUENCY, CYCLES     # EIGENVALUES BELOW    # NEW EIGENVALUES FOUND
-     1.        2.0906764E+02          2.3012486E+00                 6                       10
-     2.        3.5175285E+03          9.4392816E+00                10                        0
+     1.        1.7993815E+02          2.1349208E+00                 8                       14
+     2.        7.2697048E+02          4.2911977E+00                10                        0
 
 1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     8
                                                                                                                                     
@@ -372,7 +372,7 @@
 
                                      NUMBER OF ROOTS FOUND ................   10
 
-                                     NUMBER OF SOLVES REQUIRED ............    6
+                                     NUMBER OF SOLVES REQUIRED ............    7
 
 1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE     9
                                                                                                                                     
@@ -381,16 +381,16 @@
                                               R E A L   E I G E N V A L U E S
    MODE    EXTRACTION      EIGENVALUE            RADIANS             CYCLES            GENERALIZED         GENERALIZED
     NO.       ORDER                                                                       MASS              STIFFNESS
-        1         1       -6.077587E-08        2.465276E-04        3.923609E-05        1.000000E+00       -6.077587E-08
-        2         2       -2.327732E-08        1.525691E-04        2.428212E-05        1.000000E+00       -2.327732E-08
-        3         3       -1.340223E-08        1.157680E-04        1.842505E-05        1.000000E+00       -1.340223E-08
-        4         4       -4.435464E-09        6.659928E-05        1.059960E-05        1.000000E+00       -4.435464E-09
-        5         5        1.480686E-09        3.847968E-05        6.124231E-06        1.000000E+00        1.480686E-09
-        6         6        1.907893E-09        4.367943E-05        6.951797E-06        1.000000E+00        1.907893E-09
-        7         7        1.147971E+03        3.388172E+01        5.392443E+00        1.000000E+00        1.147971E+03
-        8         8        1.405409E+03        3.748878E+01        5.966525E+00        1.000000E+00        1.405409E+03
-        9         9        2.236684E+03        4.729359E+01        7.527008E+00        1.000000E+00        2.236684E+03
-       10        10        2.626782E+03        5.125214E+01        8.157031E+00        1.000000E+00        2.626782E+03
+        1         1       -3.879003E-08        1.969519E-04        3.134586E-05        1.000000E+00       -3.879003E-08
+        2         2       -1.448643E-08        1.203596E-04        1.915582E-05        1.000000E+00       -1.448643E-08
+        3         3       -9.338805E-09        9.663749E-05        1.538033E-05        1.000000E+00       -9.338805E-09
+        4         4       -1.199396E-10        1.095169E-05        1.743016E-06        1.000000E+00       -1.199396E-10
+        5         5        1.235037E-09        3.514309E-05        5.593197E-06        1.000000E+00        1.235037E-09
+        6         6        1.612946E-08        1.270018E-04        2.021297E-05        1.000000E+00        1.612946E-08
+        7         7        1.566146E+02        1.251458E+01        1.991757E+00        1.000000E+00        1.566146E+02
+        8         8        1.722528E+02        1.312451E+01        2.088831E+00        1.000000E+00        1.722528E+02
+        9         9        2.635583E+02        1.623448E+01        2.583798E+00        1.000000E+00        2.635583E+02
+       10        10        4.692204E+02        2.166150E+01        3.447534E+00        1.000000E+00        4.692204E+02
 1                                                                          FEBRUARY  22, 2020  NX NASTRAN  9/21/17   PAGE    10
                                                                                                                                     
 0                                                                                                            SUBCASE 1              
@@ -403,11 +403,11 @@
      (TOTAL DATA WRITTEN FOR DATA BLOCK =      246 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK BOPHIG   WRITTEN ON FORTRAN UNIT  12, TRL =
-                    101                 1             15904                22                20                 0                 1
+                    101                 1             15104                22                20                 0                 1
      (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
-     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     8144 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     8064 WORDS.)
      (NUMBER OF FORTRAN RECORDS WRITTEN =      114 RECORDS.)
-     (TOTAL DATA WRITTEN FOR DATA BLOCK =    83007 WORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    82207 WORDS.)
  *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
      DATA BLOCK OES1     WRITTEN ON FORTRAN UNIT  12, TRL =
                     101                63                 2                22                20                 0                 1

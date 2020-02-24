@@ -1,61 +1,61 @@
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Starting Nastran Exporter
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing file C:\Users\brian\Desktop\USB\Semester 
 8\ENAE484\ENAE484rover\FEMv1\Simulations\full_vehicle_lowfidelitymodel_modes-solution_1.dat
  
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing NX NASTRAN 12.0 compatible deck
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Nastran System section
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing File Management section
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Executive Control section
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Case Control section
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Bulk Data section
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Nodes
 
-*** 13:40:51 *** 
+*** 18:32:58 *** 
 Writing Elements
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Writing Physical Properties
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Writing Materials
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Writing Degree-of-Freedom Sets
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Writing Loads and Constraints
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Writing Coordinate Systems
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Summary of Bulk Data cards written
 
 +----------+----------+
 |   NAME   |  NUMBER  |
 +----------+----------+
 | CBEAM    | 350      |
-| CONM2    | 11       |
+| CONM2    | 7        |
 | CQUAD4   | 610      |
 | EIGRL    | 1        |
-| GRID     | 1018     |
+| GRID     | 1008     |
 | MAT1     | 1        |
 | MATT1    | 1        |
 | PARAM    | 6        |
@@ -65,6 +65,6 @@ Summary of Bulk Data cards written
 | TABLEM1  | 3        |
 +----------+----------+
 
-*** 13:40:51 *** 
+*** 18:32:59 *** 
 Nastran Deck Successfully Written
 
