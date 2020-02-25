@@ -3,15 +3,15 @@ $*
 $*                    Simcenter v12.0.0.27 Translator
 $*                    for NX Nastran version 12.0
 $*
-$*             FEM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Full_Vehicle_LowFidelityModel.fem
+$*             FEM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Simulations\Full_Vehicle_LowFidelityModel.fem
 $*             SIM FILE: C:\Users\brian\Desktop\USB\Semester 8\ENAE484\ENAE484rover\FEMv1\Simulations\Full_Vehicle_LowFidelityModel_Modes.sim
 $*        ANALYSIS TYPE: Structural
 $*        SOLUTION NAME: Solution 1
 $*        SOLUTION TYPE: SOL 103 Real Eigenvalues
 $*
 $*    SOLVER INPUT FILE: full_vehicle_lowfidelitymodel_modes-solution_1.dat
-$*        CREATION DATE: 22-Feb-2020
-$*        CREATION TIME: 13:40:51
+$*        CREATION DATE: 23-Feb-2020
+$*        CREATION TIME: 22:12:37
 $*             HOSTNAME: DESKTOP-A3VQUJM
 $*      NASTRAN LICENSE: Desktop Bundle
 $*
@@ -2092,26 +2092,6 @@ GRID*               4554               08.2500000000E+022.5400000000E+01+
 *       9.6363613636E+01               0
 GRID*               4555               08.2500000000E+022.5400000000E+01+
 *       1.4346000000E+03               0
-GRID*               4564               08.2500000000E+022.5400000000E+01+
-*       1.0434600000E+04               0
-GRID*               4565               08.2500000000E+022.5400000000E+01+
-*       1.1434600000E+04               0
-GRID*               4566               08.2500000000E+022.5400000000E+01+
-*       1.2434600000E+04               0
-GRID*               4567               08.2500000000E+022.5400000000E+01+
-*       1.3434600000E+04               0
-GRID*               4568               08.2500000000E+022.5400000000E+01+
-*       1.4434600000E+04               0
-GRID*               4569               08.2500000000E+022.5400000000E+01+
-*       1.5434600000E+04               0
-GRID*               4570               08.2500000000E+022.5400000000E+01+
-*       1.6434600000E+04               0
-GRID*               4571               08.2500000000E+022.5400000000E+01+
-*       1.7434600000E+04               0
-GRID*               4572               08.2500000000E+022.5400000000E+01+
-*       1.8434600000E+04               0
-GRID*               4573               08.2500000000E+022.5400000000E+01+
-*       1.9434600000E+04               0
 GRID*               4574               02.6052631579E+021.0371428571E+03+
 *       9.6000000000E+02               0
 GRID*               4575               01.3894736842E+031.0371428571E+03+
@@ -4977,14 +4957,6 @@ CBEAM       1409       4    4549     246-0.496140.868243  0.0000
 CBEAM       1410       4    4549       2-0.496140.868243  0.0000
 CBEAM       1411       4    4549      190.4961390.868243  0.0000
 CBEAM       1412       4    4549     2860.1717170.8682430.465475
-$*  Mesh Collector: Wheel Masses
-$*  Mesh: 0d_mesh(2)
-CONM2       1443    4548       0 20.0000
-$*  Mesh Collector: Wheel Masses
-$*  Mesh: 0d_mesh(3)
-CONM2       1444    4549       0 20.0000
-CONM2       1445    4550       0 20.0000
-CONM2       1446    4551       0 20.0000
 $*  Mesh Collector: Mast Connector
 $*  Mesh: connection_mesh(5)
 RBE2        1417    4554  123456    1025    1021     945     949
@@ -5039,17 +5011,29 @@ CONM2       1451    4577       0110.0000
 $*  Mesh Collector: Storage Mass
 $*  Mesh: 0d_manual_mesh(12)
 CONM2       1452    4576       0110.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(13)
+CONM2       1455    4551       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(14)
+CONM2       1456    4550       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(15)
+CONM2       1457    4549       0 20.0000
+$*  Mesh Collector: Wheel and Motor
+$*  Mesh: 0d_manual_mesh(16)
+CONM2       1458    4548       0 20.0000
 $*
 $* PROPERTY CARDS
 $*
 $*  Property: Length_Wise Box Beams
 $*  Section: Length_Wise_Box
-PBEAM          1       1225.000019218.7519218.75  0.000030114.63  0.0000+
-+        12.5000 12.5000 -12.500 12.5000 -12.500 -12.500 12.5000 -12.500+
-+            YES1.000000225.000019218.7519218.75  0.000030114.63  0.0000+
-+        12.5000 12.5000 -12.500 12.5000 -12.500 -12.500 12.5000 -12.500+
-+       0.4438140.443814                                 5762.94 5762.94+
-+                                       1.9111-7  0.00001.9111-7  0.0000
+PBEAM          1       1 70.5644 1481.94 1481.94  0.0000 2346.40  0.0000+
++       6.3500006.350000-6.350006.350000-6.35000-6.350006.350000-6.35000+
++            YES1.000000 70.5644 1481.94 1481.94  0.0000 2346.40  0.0000+
++       6.3500006.350000-6.350006.350000-6.35000-6.350006.350000-6.35000+
++       0.4545030.454503                                162.3431162.3431+
++                                       -1.916-7  0.0000-1.916-7  0.0000
 $*  Property: Bulkhead
 PSHELL         2       13.000000       11.000000       10.833333  0.0000
 $*  Property: Temp Suspension Prop
@@ -5092,4 +5076,4 @@ TABLEM1        3                       1                                +
 +       190.56002.4300-5204.44002.4444-5218.33002.4588-5232.22002.4732-5+
 +       246.11002.4876-5260.00002.5002-5273.89002.5146-5287.78002.5272-5+
 +       301.67002.5398-5315.56002.5524-5    ENDT
-ENDDATA fe5e78d8
+ENDDATA ee8bf583
