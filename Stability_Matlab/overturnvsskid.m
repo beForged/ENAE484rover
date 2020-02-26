@@ -50,6 +50,7 @@ title({['Turn Radius Required to Overturn Rover as a Function of SSF and Slope A
     ['V = ' num2str(v) ' m/s']});
 xlabel('\theta (Degrees)');
 ylabel('Turn Radius (m)');
+set(gca,'FontSize',25);
 grid on;
 hold off;
 
@@ -69,6 +70,7 @@ title({['Turn Radius Required to Induce Slidding as a Function of Coefficient of
     ['V = ' num2str(v) ' m/s']});
 xlabel('\theta (Degrees)');
 ylabel('Turn Radius (m)');
+set(gca,'FontSize',20);
 grid on;
 hold off;
 
@@ -122,6 +124,7 @@ ylabel('Minimum Turn Radius (m)');
 xlabel('Velocity (m/s)');
 xlim([0 6]);
 title({['Turn Radius Required to Overturn Rover as a Function of Velocity and Static Stability Factor'];['\theta = 0']});
+set(gca,'FontSize',25);
 grid on;
 hold off;
 
@@ -135,12 +138,13 @@ figure(5);
 hold on;
 plot(mu,theta,'r');
 yline(25,'b--');
-xline(0.3,'p--');
-xline(0.6,'p--');
+xline(0.3,'k--');
+xline(0.6,'k--');
 legend(['\theta(\mu)'],['\theta = 25'],['\mu = 0.3 - 0.6']);
 xlabel('Coefficient of Friction (\mu)');
 ylabel('Slope Angle (Degrees)');
 title({['Slope Angle as a Function of Coefficient of Friction'];['V = 0 km/hr']});
+set(gca,'FontSize',25);
 grid on;
 hold off;
 
@@ -151,7 +155,7 @@ SSF = [0.5:0.5:2]; %static stability factor (d/2h)
 T = [0:1:500]; %Wheel Torque
 r = 0.5; %m
 W = 1000; %kg
-SSFcurrent = 1.5128638/(2*0.74765)
+SSFcurrent = 1.2532
 
 for i = 1:length(SSF)
     for j = 1:length(T)
@@ -175,8 +179,9 @@ xline(25,'b--');
 grid on;
 legend(['SSF = ' num2str(SSF(1))],['SSF = ' num2str(SSF(2))],...
     ['SSF = ' num2str(SSF(3))],['SSF = ' num2str(SSF(4))],...
-    ['Current SSF = ' num2str(SSFcurrent)],['\tau = 300 N-m'],['\theta = 25']);
+    ['Current SSF = ' num2str(SSFcurrent)],['\tau = 300 N-m'],['\theta = 25'],'fontsize',18);
 xlabel('Slope Angle \theta (Degrees)');
 ylabel('Torque \tau (N/m)');
 title('Torque (\tau) Required to Overturn Rover on Slope (\theta) for a range of SSF');
+set(gca,'FontSize',25)
 hold off;
