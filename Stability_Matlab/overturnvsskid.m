@@ -70,7 +70,7 @@ title({['Turn Radius Required to Induce Slidding as a Function of Coefficient of
     ['V = ' num2str(v) ' m/s']});
 xlabel('\theta (Degrees)');
 ylabel('Turn Radius (m)');
-set(gca,'FontSize',20);
+set(gca,'FontSize',24);
 grid on;
 hold off;
 
