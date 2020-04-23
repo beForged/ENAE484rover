@@ -1,0 +1,75 @@
+
+*** 14:27:17 *** 
+Starting Nastran Exporter
+
+*** 14:27:17 *** 
+Writing file 
+\\Client\C$\Users\Braden\Desktop\ENAE484\ENAE484rover\CADv5\aarmcdr_sim1-solution_1.dat
+ 
+*** 14:27:18 *** 
+Writing NX NASTRAN 12.2 compatible deck
+
+*** 14:27:18 *** 
+Writing Nastran System section
+
+*** 14:27:18 *** 
+Writing File Management section
+
+*** 14:27:18 *** 
+Writing Executive Control section
+
+*** 14:27:18 *** 
+Writing Case Control section
+
+*** 14:27:18 *** 
+WARNING : Parameter AUTOMPC may not be recognized by the solver when specified 
+          in the case control section
+ 
+*** 14:27:18 *** 
+Writing Bulk Data section
+
+*** 14:27:18 *** 
+Writing Nodes
+
+*** 14:29:01 *** 
+Writing Elements
+
+*** 14:30:10 *** 
+Writing Physical Properties
+
+*** 14:30:10 *** 
+Writing Materials
+
+*** 14:30:10 *** 
+Writing Degree-of-Freedom Sets
+
+*** 14:30:10 *** 
+Writing Loads and Constraints
+
+*** 14:30:11 *** 
+Writing Coordinate Systems
+
+*** 14:30:11 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CTETRA   | 58961    |
+| FORCE    | 1        |
+| GRID     | 90081    |
+| MAT1     | 1        |
+| MATT1    | 1        |
+| PARAM    | 6        |
+| PSOLID   | 1        |
+| RBE3     | 3        |
+| SPC      | 2        |
+| TABLEM1  | 3        |
++----------+----------+
+
+*** 14:30:11 *** 
+1 warning issued
+
+*** 14:30:11 *** 
+Nastran Deck Successfully Written
+

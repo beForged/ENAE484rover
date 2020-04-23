@@ -24,8 +24,8 @@ grid on;
 plot(v,r_flat,'r');
 plot(v,r_slope,'b');
 xlabel('Velocity (m/s)');
-ylabel('Turn Radius (m)');
-title('Unmanned Turn Radius Vs. Velocity')
+ylabel('Manned Turn Radius (m)');
+title('Turn Radius Vs. Velocity')
 legend('\theta = 0 Deg' ,['\theta = ' num2str(theta) ' Deg']);
 set(gca,'FontSize',25);
 hold off;
