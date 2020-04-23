@@ -1,0 +1,657 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                 Copyright 2017 Siemens Product Lifecycle    
+                        Management Software Inc.             
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                 proprietary to Siemens Product Lifecycle    
+                        Management Software Inc.             
+                                                             
+              Siemens and the Siemens logo are registered    
+             trademarks of Siemens AG. NX is a trademark or  
+                registered trademark of Siemens Product      
+               Lifecycle Management Software Inc. or its     
+             subsidiaries in the United States and in other  
+             countries.  NASTRAN is a registered trademark   
+                 of the National Aeronautics and Space       
+                 Administration.  All other trademarks,      
+              registered trademarks or service marks belong  
+                      to their respective holders.           
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+              from time to time.  Siemens PLM Software Inc.  
+            5800 Granite Parkway, Suite 600, Plano, TX 75024 
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *       N X   N a s t r a n       * *
+                * *                                 * *
+                * *        VERSION -  12.0.2        * *
+                * *                                 * *
+                * *          MAY 23, 2018           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 45 Steppi * *
+                * *                                 * *
+                * *MODEL Intel(R) Xeon(R) CPU E5-26 * *
+                * *                                 * *
+                * *       Windows Server 2012       * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                        Welcome to NX Nastran
+                        -------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=32769 $(C:/PROGRAM FILES/SIEMENS/NX 12.0/NXNASTRAN/CONF/NAST12.
+     NASTRAN BUFFPOOL=94323                                                          
+     NASTRAN DIAGA=128 DIAGB=0 $(C:/PROGRAM FILES/SIEMENS/NX 12.0/NXNASTRAN/CONF/NAST
+     NASTRAN SYSTEM(442)=2 $(COMMAND LINE[5])                                        
+     NASTRAN REAL=34352136192 $(MEMORY LIMIT FOR MPI AND OTHER SPECIALIZED MODULES)  
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*                    SIMCENTER V12.0.2.9 TRANSLATOR                            
+     $*                    FOR NX NASTRAN VERSION 12.2                               
+     $*                                                                              
+     $*             FEM FILE: \\CLIENT\C$\USERS\BRADEN\DESKTOP\ENAE484\ENAE484ROVER\C
+     $*             SIM FILE: \\CLIENT\C$\USERS\BRADEN\DESKTOP\ENAE484\ENAE484ROVER\C
+     $*        ANALYSIS TYPE: STRUCTURAL                                             
+     $*        SOLUTION NAME: SOLUTION 1                                             
+     $*        SOLUTION TYPE: SOL 101 LINEAR STATICS - GLOBAL CONSTRAINTS            
+     $*                                                                              
+     $*    SOLVER INPUT FILE: AARMCDR_SIM1-SOLUTION_1.DAT                            
+     $*        CREATION DATE: 23-APR-2020                                            
+     $*        CREATION TIME: 14:27:18                                               
+     $*             HOSTNAME: ENGRAP985                                              
+     $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
+     $*                                                                              
+     $*                UNITS: MM (MILLI-NEWTON)                                      
+     $*                      ... LENGTH : MM                                         
+     $*                      ... TIME   : SEC                                        
+     $*                      ... MASS   : KILOGRAM (KG)                              
+     $*                      ... TEMPERATURE : DEG CELSIUS                           
+     $*                      ... FORCE  : MILLI-NEWTON                               
+     $*                      ... THERMAL ENERGY : MN-MM (MICRO-JOULE)                
+     $*                                                                              
+     $* IMPORTANT NOTE:                                                              
+     $*     THIS BANNER WAS GENERATED BY SIMCENTER AND ALTERING THIS                 
+     $*     INFORMATION MAY COMPROMISE THE PRE AND POST PROCESSING OF RESULTS        
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* FILE MANAGEMENT                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* EXECUTIVE CONTROL                                                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID,NASTRAN,AARMCDR_SIM1-SOLUTION_1                                                      
+     SOL 101                                                                                 
+     CEND                                                                                    
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $*                                                                                      
+                  2      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  3      $*                                                                                      
+                  4      $* CASE CONTROL                                                                         
+                  5      $*                                                                                      
+                  6      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  7      $*                                                                                      
+                  8      ECHO = NONE                                                                             
+                  9      SPC = 1                                                                                 
+                 10      OUTPUT                                                                                  
+                 11      DISPLACEMENT(PLOT,REAL) = ALL                                                           
+                 12      ESE(PLOT,AVERAGE,RMAG) = ALL                                                            
+                 13      SPCFORCES(PLOT,REAL) = ALL                                                              
+                 14      STRESS(PLOT,REAL,VONMISES,CENTER) = ALL                                                 
+                 15      PARAM,AUTOMPC,YES                                                                       
+ *** USER WARNING MESSAGE 23016 (IFP1)
+     PARAM CARD AUTOMPC IS NOT ALLOWED IN THE CASE CONTROL.
+     INVALID RESULTS MAY OCCUR. PLEASE MOVE IT TO THE BULK DATA.
+                 16      $*  STEP: SUBCASE - STATIC LOADS 1                                                      
+                 17      SUBCASE 1                                                                               
+                 18        LABEL = SUBCASE - STATIC LOADS 1                                                      
+                 19        LOAD = 2                                                                              
+                 20      $*                                                                                      
+                 21      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 22      $*                                                                                      
+                 23      $* BULK DATA                                                                            
+                 24      $*                                                                                      
+                 25      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 26      $*                                                                                      
+                 27      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =      298258
+0                       TOTAL COUNT=    298228
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =    90081
+ 
+ 
+                                   NUMBER OF CTETRA   ELEMENTS =    58961
+ 
+                                   NUMBER OF RBE3     ELEMENTS =        3
+ *** USER INFORMATION MESSAGE 4109 (OUTPBN2)
+     THE LABEL IS NX12.0.2 FOR FORTRAN UNIT 12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
+     (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK IBULK    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =  1491299 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  7158191 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK ICASE    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                29                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =      159 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      722 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK CASECC   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 1                 0              1210                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =     1210 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =     1236 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK PVT0     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                28                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       28 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       54 WORDS.)
+ *** USER INFORMATION MESSAGE 2050 (ESCHEL)
+     AUTOMPC PROCESSING COMPLETE
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             90081             90081                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       30 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   270274 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102             90081                 7                 0                 1                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       45 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   900836 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0               256                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       10 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       43 WORDS.)
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK MPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             33280                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       15 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       67 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM2    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0                 0                 0               512                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       44 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   707568 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 0                 0                64                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       10 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       43 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 0                 0                 0               512               512                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      907 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      955 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    104                 0                 0                 8                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       54 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   990927 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    105             90081                 0            540486                 1                 0             90081
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       60 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  1261164 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK DIT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             32768                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      137 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      170 WORDS.)
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             90081                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       32 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   360354 WORDS.)
+ *** USER INFORMATION MESSAGE 7555 (ETETGS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     ALL EDGE LENGTH TO HEIGHT  RATIO (AR)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 EDGE NODE POINT LENGTH RATIO (ER)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MINIMUM OF        100 EDGE NODE POINT INCLUDED ANGLE   TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     ALL NEG/ZERO DET(JACOBIAN) VALUE (DJ)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 NEG DET(JAC) AT VERTEX NODE  (DG)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA          10       4.00        1.33       3.01            0.99           45.00 xxxx      13.16           12.62     
+    TETRA          14       3.48        1.07       3.25            1.00           45.00 xxxx       6.46            5.61     
+    TETRA          26       4.31        1.72       2.50            1.00           31.62 xxxx      12.95           11.76     
+    TETRA         224       4.19        0.78       5.35            1.00           21.15            1.62           -1.14 xxxx
+    TETRA         404       3.69        0.91       4.07            1.00           34.51 xxxx       1.03           -0.33 xxxx
+    TETRA         668       3.82        1.13       3.38            1.00           45.00 xxxx       5.17            3.63     
+    TETRA         731       3.32        1.34       2.48            1.00           45.00 xxxx       7.70            7.28     
+    TETRA         747       4.30        1.31       3.29            1.00           45.00 xxxx       5.32            3.83     
+    TETRA         750       4.21        1.06       3.96            1.00           45.00 xxxx       5.32            3.83     
+    TETRA         846       3.74        0.79       4.72            1.00           34.51 xxxx       1.59            0.55     
+    TETRA         850       3.93        1.20       3.29            0.98           32.49 xxxx      10.67            9.94     
+    TETRA         866       3.73        0.79       4.70            1.00           34.51 xxxx       1.60            0.56     
+    TETRA         879       3.35        1.52       2.20            1.00           30.28 xxxx      10.36            9.98     
+    TETRA         881       3.55        0.93       3.80            0.98           30.13 xxxx       2.00            0.29     
+    TETRA         885       3.55        1.27       2.80            1.00           34.52 xxxx       7.84            7.32     
+    TETRA         886       3.75        1.28       2.93            1.00           45.12 xxxx       7.30            6.96     
+    TETRA         888       3.62        1.19       3.04            1.00           34.29 xxxx       8.04            7.94     
+    TETRA         889       3.62        1.32       2.74            1.00           34.29 xxxx      11.09           10.77     
+    TETRA         890       4.38        1.22       3.59            0.98           34.29 xxxx      13.48           12.55     
+    TETRA         906       2.72        0.62       4.38            1.00           45.12 xxxx       0.76            0.39     
+    TETRA         908       3.82        1.31       2.91            1.00           45.00 xxxx       7.92            7.64     
+    TETRA         911       3.82        1.31       2.91            1.00           45.00 xxxx       7.54            7.25     
+    TETRA         924       3.84        1.28       2.99            1.00           45.00 xxxx       7.75            7.51     
+    TETRA         939       4.55        1.22       3.73            1.00           45.00 xxxx       7.77            7.51     
+    TETRA         940       4.09        1.30       3.15            1.00           45.00 xxxx       5.20            3.66     
+    TETRA         942       4.45        1.03       4.33            1.00           45.00 xxxx       5.20            3.66     
+    TETRA         956       3.86        0.75       5.12            1.00           34.37 xxxx       1.36           -0.42 xxxx
+    TETRA         961       3.86        1.26       3.06            1.00           45.00 xxxx       5.31            3.84     
+    TETRA         998       3.85        1.14       3.37            1.00           45.00 xxxx       5.31            4.32     
+    TETRA        1001       3.85        1.22       3.15            1.00           45.00 xxxx       5.82            4.29     
+    TETRA        1002       3.85        1.32       2.93            1.00           45.00 xxxx       7.83            7.59     
+    TETRA        1117       2.79        0.92       3.01            1.00           34.52 xxxx       1.75            1.22     
+    TETRA        1259       3.82        1.31       2.91            1.00           45.00 xxxx       8.13            7.87     
+    TETRA        1382       4.64        1.17       3.96            0.99           44.97 xxxx       6.31            5.84     
+    TETRA        1434       3.72        1.24       2.99            1.00           44.97 xxxx       5.29            4.77     
+    TETRA        1441       3.77        1.01       3.74            1.00           34.52 xxxx       2.06            1.26     
+    TETRA        1444       2.36        1.03       2.29            1.00           34.52 xxxx       1.84            1.41     
+    TETRA        1484       3.77        1.06       3.54            1.00           34.52 xxxx       3.96            3.03     
+    TETRA        1538       3.74        1.08       3.46            1.00           34.51 xxxx       3.82            2.93     
+    TETRA        1544       3.80        0.83       4.58            1.00           34.52 xxxx       0.79           -0.70 xxxx
+    TETRA        1557       3.82        1.17       3.28            1.00           45.00 xxxx       5.43            4.56     
+    TETRA        1562       4.09        1.07       3.83            1.00           45.00 xxxx       5.29            3.71     
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA        1573       4.48        1.45       3.10            1.00           40.82 xxxx       3.08            0.56     
+    TETRA        1586       3.71        1.32       2.81            1.00           44.96 xxxx       6.36            5.88     
+    TETRA        1652       3.82        1.31       2.92            1.00           45.00 xxxx       8.14            7.91     
+    TETRA        1672       3.58        0.26      13.61            1.00           22.53            0.26           -0.28 xxxx
+    TETRA        1804       3.89        1.30       2.98            1.00           45.02 xxxx       5.82            4.50     
+    TETRA        1805       3.75        1.16       3.23            1.00           45.10 xxxx       5.15            4.30     
+    TETRA        1808       3.75        1.15       3.25            1.00           45.00 xxxx       5.20            4.23     
+    TETRA        1809       3.75        1.29       2.90            1.00           45.10 xxxx       7.62            7.35     
+    TETRA        1814       3.15        1.14       2.75            1.00           45.00 xxxx       2.70            2.04     
+    TETRA        1819       3.82        1.31       2.92            1.00           45.00 xxxx       8.09            7.85     
+    TETRA        1826       3.36        1.22       2.76            1.00           45.00 xxxx       6.47            5.68     
+    TETRA        1828       4.54        1.23       3.69            1.00           45.00 xxxx       7.81            7.58     
+    TETRA        1833       3.82        1.31       2.91            1.00           45.00 xxxx       8.11            7.87     
+    TETRA        1834       3.30        1.34       2.46            1.00           45.00 xxxx       7.66            7.23     
+    TETRA        1853       4.55        1.25       3.64            1.00           45.00 xxxx       7.44            7.11     
+    TETRA        1883       3.35        1.33       2.53            1.00           45.00 xxxx       7.48            6.99     
+    TETRA        1888       4.74        1.31       3.61            1.00           45.00 xxxx       5.30            3.81     
+    TETRA        1895       5.03        1.11       4.51            1.00           45.00 xxxx       4.64            3.63     
+    TETRA        1911       3.70        1.07       3.47            1.00           34.48 xxxx       3.85            2.73     
+    TETRA        1913       3.78        1.26       3.01            1.00           45.00 xxxx       7.52            7.11     
+    TETRA        1963       3.85        1.32       2.93            1.00           45.00 xxxx       8.31            8.07     
+    TETRA        1965       3.43        1.23       2.80            1.00           45.00 xxxx       6.65            5.77     
+    TETRA        2105       3.75        1.30       2.88            1.00           45.15 xxxx       7.66            7.35     
+    TETRA        2136       3.74        0.79       4.74            1.00           34.51 xxxx       1.54            0.50     
+    TETRA        2138       2.81        0.91       3.10            1.00           34.51 xxxx       1.61            1.06     
+    TETRA        2151       3.67        1.32       2.78            1.00           44.84 xxxx       6.82            6.21     
+    TETRA        2303       3.85        1.31       2.93            1.00           45.00 xxxx       7.83            7.54     
+    TETRA        2323       3.75        1.31       2.85            1.00           44.99 xxxx       7.88            7.52     
+    TETRA        2336       3.85        1.22       3.16            1.00           45.00 xxxx       5.85            4.33     
+    TETRA        2380       3.42        1.34       2.55            1.00           45.00 xxxx       7.94            7.50     
+    TETRA        2400       3.35        1.54       2.18            1.00           30.28 xxxx      10.47           10.08     
+    TETRA        2465       4.63        1.19       3.90            1.00           45.00 xxxx       7.09            6.72     
+    TETRA        2481       4.32        1.13       3.83            1.00           45.10 xxxx       4.28            3.40     
+    TETRA        2482       3.56        1.10       3.24            1.00           45.10 xxxx       4.76            3.40     
+    TETRA        2484       4.32        1.30       3.31            0.99           45.27 xxxx       4.85            3.50     
+    TETRA        2488       3.82        1.31       2.92            1.00           45.00 xxxx       8.30            8.07     
+    TETRA        2489       3.82        1.19       3.21            1.00           45.00 xxxx       5.30            3.65     
+    TETRA        2498       3.82        1.31       2.91            1.00           45.00 xxxx       8.23            8.00     
+    TETRA        2500       3.82        1.31       2.91            1.00           45.00 xxxx       7.57            7.29     
+    TETRA        2514       3.71        1.28       2.89            1.00           44.96 xxxx       6.25            5.88     
+    TETRA        2530       3.85        1.32       2.93            1.00           45.00 xxxx       7.87            7.63     
+    TETRA        2534       3.85        1.31       2.93            1.00           45.00 xxxx       7.64            7.29     
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA        2547       3.51        1.21       2.90            1.00           45.00 xxxx       6.46            5.50     
+    TETRA        2551       3.85        1.24       3.10            1.00           45.00 xxxx       5.75            4.23     
+    TETRA        2557       3.44        1.21       2.84            1.00           45.00 xxxx       6.47            5.56     
+    TETRA        2571       3.85        1.31       2.93            1.00           45.00 xxxx       8.03            7.74     
+    TETRA        2604       3.85        1.23       3.12            1.00           45.00 xxxx       6.11            4.68     
+    TETRA        2607       4.39        1.30       3.37            1.00           45.00 xxxx       4.92            3.27     
+    TETRA        2632       3.75        1.22       3.07            0.99           45.25 xxxx       5.72            4.18     
+    TETRA        2667       3.82        1.31       2.91            1.00           45.00 xxxx       8.09            7.81     
+    TETRA        2669       3.82        1.31       2.91            1.00           45.00 xxxx       8.06            7.81     
+    TETRA        2693       3.82        1.15       3.33            1.00           45.00 xxxx       5.58            3.97     
+    TETRA        2701       3.82        1.31       2.91            1.00           45.00 xxxx       8.25            8.00     
+    TETRA        2712       3.60        1.09       3.31            1.00           45.00 xxxx       3.05            2.10     
+    TETRA        2716       3.82        1.31       2.92            1.00           45.00 xxxx       8.04            7.78     
+    TETRA        2720       3.88        1.31       2.95            1.00           44.95 xxxx       9.37            8.76     
+    TETRA        2732       3.82        1.31       2.92            1.00           45.00 xxxx       8.11            7.85     
+    TETRA        2733       4.19        1.26       3.34            1.00           45.00 xxxx       7.77            7.54     
+    TETRA        2735       3.82        1.11       3.44            1.00           45.00 xxxx       4.73            3.65     
+    TETRA        2737       4.26        1.12       3.80            1.00           45.00 xxxx       4.78            3.78     
+    TETRA        3553       3.74        1.03       3.62            1.00           45.00 xxxx       1.25           -0.69 xxxx
+    TETRA        3685       3.55        0.36       9.76            1.00           22.49            0.42           -0.12 xxxx
+    TETRA        4631      10.49        1.07       9.85            1.00            7.96            5.93           -4.25 xxxx
+    TETRA        4856       5.09        1.13       4.52            1.00           16.36            3.05           -0.41 xxxx
+    TETRA        5397       3.55        0.36       9.86            1.00           22.49            0.48           -0.00 xxxx
+    TETRA        5935       3.73        1.03       3.62            1.00           44.99 xxxx       1.27           -0.67 xxxx
+    TETRA        6024       3.90        0.99       3.94            0.99           44.85 xxxx       0.90           -0.46 xxxx
+    TETRA        8189       3.70        1.08       3.41            1.00           44.95 xxxx       1.47           -0.17 xxxx
+    TETRA        8700       3.47        0.69       5.04            0.99           34.51 xxxx       0.65           -0.66 xxxx
+    TETRA       10278       2.55        0.68       3.75            1.00           34.52 xxxx       0.33           -0.32 xxxx
+    TETRA       10442       3.72        0.42       8.86            1.00           17.65            0.68           -0.00 xxxx
+    TETRA       10595       4.90        0.60       8.18            1.00           39.68 xxxx       0.84           -1.13 xxxx
+    TETRA       10905       3.70        0.82       4.50            1.00           23.37            1.50           -0.36 xxxx
+    TETRA       11030      10.49        1.02      10.26            1.00            7.10            6.57           -3.06 xxxx
+    TETRA       11316       3.77        0.42       9.00            1.00           17.66            0.65           -0.21 xxxx
+    TETRA       11326       4.03        0.89       4.52            1.00           23.37            1.11           -0.10 xxxx
+    TETRA       11357       3.80        0.95       3.98            1.00           23.40            1.07           -0.38 xxxx
+    TETRA       11884       3.54        0.39       8.97            1.00           16.65            0.20           -0.13 xxxx
+    TETRA       11907       3.86        0.95       4.06            1.00           44.96 xxxx       1.12           -0.35 xxxx
+    TETRA       11951       3.71        0.77       4.80            1.00           44.96 xxxx       0.43           -0.53 xxxx
+    TETRA       12720       3.71        0.44       8.49            1.00           17.65            0.64           -0.33 xxxx
+    TETRA       12886       5.18        1.17       4.42            1.00           17.29            2.40           -1.06 xxxx
+    TETRA       13456       3.86        0.81       4.79            1.00           34.45 xxxx       1.07           -0.98 xxxx
+    TETRA       13521       4.85        0.76       6.36            1.00           15.94            2.36           -0.35 xxxx
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA       13532       3.72        0.70       5.32            1.00           13.46            0.95           -0.01 xxxx
+    TETRA       16172       5.80        0.60       9.59            1.00           20.74            0.81           -0.44 xxxx
+    TETRA       17090       2.52        0.68       3.69            1.00           34.51 xxxx       0.31           -0.31 xxxx
+    TETRA       21353       2.29        0.45       5.03            1.00           19.82            0.35           -0.00 xxxx
+    TETRA       21949       3.62        0.55       6.64            1.00           26.23            0.45           -0.26 xxxx
+    TETRA       22259       3.62        0.67       5.42            1.00           34.51 xxxx       0.48           -0.47 xxxx
+    TETRA       27396       3.74        0.71       5.29            1.00           34.51 xxxx       0.37           -0.46 xxxx
+    TETRA       27498       2.94        0.74       3.97            1.00           34.52 xxxx       0.88           -0.02 xxxx
+    TETRA       27507       3.71        0.58       6.40            1.00           17.64            0.55           -0.31 xxxx
+    TETRA       27598       3.54        0.42       8.49            1.00           16.65            0.19           -0.02 xxxx
+    TETRA       27951       3.07        0.68       4.50            1.00           34.52 xxxx       0.39           -0.36 xxxx
+    TETRA       28171       2.54        0.40       6.35            1.00           17.66            0.35           -0.06 xxxx
+    TETRA       28172       2.91        0.40       7.29            1.00           17.66            0.48           -0.07 xxxx
+    TETRA       28644       4.03        0.59       6.78            1.00           17.97            0.78           -0.05 xxxx
+    TETRA       29237       3.13        0.27      11.66            1.00           22.50            0.20           -0.04 xxxx
+    TETRA       31742       3.71        1.02       3.64            1.00           44.97 xxxx       1.15           -0.79 xxxx
+    TETRA       32279      10.49        0.71      14.71            1.00            7.10            4.08           -0.78 xxxx
+    TETRA       34019       4.68        1.13       4.14            1.00           18.89            1.57           -0.59 xxxx
+    TETRA       39326       5.75        0.71       8.16            1.00           20.75            1.11           -0.39 xxxx
+    TETRA       41541       6.25        0.47      13.34            1.00            7.67            0.86           -0.86 xxxx
+    TETRA       43712       3.74        0.45       8.33            1.00           17.66            0.82           -0.06 xxxx
+    TETRA       44315       3.83        0.84       4.56            0.99           34.29 xxxx       1.89           -0.47 xxxx
+    TETRA       44590       3.71        0.45       8.32            1.00           17.64            0.78           -0.15 xxxx
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+ ELEMENT     SKEW    ASPECT/       MINIMUM       MAXIMUM    SURFACE/FACE  THICKNESS/     EDGE POINT    EDGE POINT       JACOBIAN
+ TYPE        ANGLE  TAPER RATIO  INTER. ANGLE  INTER. ANGLE  WARP FACTOR  OFFSET RATIO  LENGTH RATIO  INCLUDED ANGLE  DETERMINANT
+ TETRA         N/A          0           N/A           N/A           N/A           N/A             0          1099            52     
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         TETRA    ELEMENT ID     4631 PRODUCED SMALLEST VERTEX DET(JAC) -UWM 6828- OF      -4.25 (TOLERANCE =        0.00).
+         TETRA    ELEMENT ID     2484 PRODUCED LARGEST  EDGE POINT IA    OF      45.27 (TOLERANCE =       30.00).
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----      -5.000000E+05 -1.500000E+08  0.000000E+00     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00 -5.000000E+05 -1.500000E+08  0.000000E+00  0.000000E+00                             
+ *** USER INFORMATION MESSAGE - SINGULARITIES FOUND USING EIGENVALUE METHOD
+ ***  270234 SINGULARITIES FOUND    270234 SINGULARITIES ELIMINATED
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    13
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ *** SYSTEM INFORMATION MESSAGE 6916 (DFMSYN)
+     DECOMP ORDERING METHOD CHOSEN: DEFAULT, ORDERING METHOD USED: BEND
+ *** USER INFORMATION MESSAGE 5293 (SSG3A)
+    FOR DATA BLOCK KLL     
+    LOAD SEQ. NO.             EPSILON              EXTERNAL WORK      EPSILONS LARGER THAN 0.001 ARE FLAGGED WITH ASTERISKS
+                1          4.5005063E-09          2.4907372E+07
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    14
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  SPCFORCE RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    4.797378E+01     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       3.500171E+00     ----       0.000000E+00     ----       1.482715E+05                             
+               FZ       ----          ----       5.000077E+05  0.000000E+00 -1.690035E+04     ----                                  
+               MX       ----          ----          ----       1.500000E+08     ----          ----                                  
+               MY       ----          ----          ----          ----       1.692829E+04     ----                                  
+               MZ       ----          ----          ----          ----          ----      -1.469271E+05                             
+             TOTALS  4.797378E+01  3.500171E+00  5.000077E+05  1.500000E+08  2.793450E+01  1.344435E+03                             
+ *** USER INFORMATION MESSAGE 4507 (SDREE)
+     IN SUBCASE         1                     
+     THERE ARE  40447 TETRA    ELEMENTS HAVING STRAIN ENERGY WHICH IS LESS THAN   0.0010 PERCENT
+     OF THE TOTAL STRAIN ENERGY OF ALL ELEMENTS.
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK OQG1     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                10             65288                23                20                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       44 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   720829 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK BOUGV1   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                10             65288                23                20                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       44 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   720829 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK OES1     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                63                 4                23                20                 0                 1
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =      220 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  6426930 WORDS.)
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    15
+                                                                                                                                    
+0                                                                                                                                   
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    16
+                                                                                                                                    
+0                                                                                                                                   
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    17
+                                                                                                                                    
+0                                                                                                                                   
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    18
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK ONRGY1   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 2                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       26 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    74236 WORDS.)
+ *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT 12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1                                                                             APRIL  23, 2020  NX NASTRAN  5/23/18   PAGE    19
+                                                                                                                                    
+0                                                                                                                                   
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     28
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    T    T    T    T     F      F      T      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 
