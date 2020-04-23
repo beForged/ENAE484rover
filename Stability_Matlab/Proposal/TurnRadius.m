@@ -2,7 +2,7 @@
 
 clear; close all;
 
-h = 0.75; %Height of CG, m
+h = 0.538; %Height of CG, m
 c = 2; %Length of wheel base, m
 y = c/2; %Horizontal location of CG from right wheel, m
 
@@ -24,7 +24,8 @@ grid on;
 plot(v,r_flat,'r');
 plot(v,r_slope,'b');
 xlabel('Velocity (m/s)');
-ylabel('Turn Radius (m)');
+ylabel('Manned Turn Radius (m)');
 title('Turn Radius Vs. Velocity')
 legend('\theta = 0 Deg' ,['\theta = ' num2str(theta) ' Deg']);
+set(gca,'FontSize',25);
 hold off;
